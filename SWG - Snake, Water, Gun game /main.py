@@ -1,7 +1,8 @@
 import random
 computer = random.choice([-1,0,1])
-you = int(input("Enter your choice : "))
-dict = {"s":-1, "w":0, "g":1}
+youStr = input("Enter your choice : ")
+youDict = {"s":-1, "w":0, "g":1}
+you = youDict[youStr]
 reverseDict = {-1 : "Snake", 0 : "Water", 1 : "Gun"}
 print(f"Your choice : {reverseDict[you]}\n Computer choice : {reverseDict[computer]}")
 if computer == you:
