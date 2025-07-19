@@ -1,4 +1,14 @@
 import random
+"""
+Developer's Note :
+ I have created a simple snake, water, gun game
+ I've used a clear if/elif/else ladder below to check for the winner,
+ as it's the most readable approach for this classic game's logic.
+ I also explored a more mathematical approach using the modulo operator,
+ where the winning condition can be simplified to `(player - computer) % 3 == 2`.
+ While efficient, I chose the explicit ladder for better clarity in this project.
+
+"""
 choiceDict = {"s":-1, "w":0, "g":1}
 reverseDict = {-1 : "Snake", 0 : "Water", 1 : "Gun"}
 while True:
